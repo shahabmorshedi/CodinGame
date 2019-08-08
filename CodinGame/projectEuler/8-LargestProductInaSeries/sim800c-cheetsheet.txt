@@ -1,0 +1,4 @@
+at+cmee=1 //error report and module will respond with error code
+at+cmee=2 //error report and module will respond with details error 
+
+ATZ Reset Default Configuration and AT&F Factory Defined Configurat

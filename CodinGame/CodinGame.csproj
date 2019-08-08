@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CodinGame.Defibrillators.Defibrillators</StartupObject>
+    <StartupObject>CodinGame.DwarfsStandingOnTheShouldersOfGiants.DwarfsStandingOnTheShouldersOfGiants</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,17 +61,105 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlowingFuse\BlowingFuse.cs" />
+    <Compile Include="BRACKETS_EXTREME_EDITION\BRACKETS_EXTREME_EDITION.cs" />
+    <Compile Include="CGX Formatter\CGXFormatter.cs" />
+    <Compile Include="Clash\Clash1.cs" />
+    <Compile Include="CodealaMode\CodealaMode.cs" />
+    <Compile Include="Defibrillators\Defibrillators - Copy.cs" />
     <Compile Include="Defibrillators\Defibrillators.cs" />
+    <Compile Include="DwarfsStandingOnTheShouldersOfGiants\DwarfsStandingOnTheShouldersOfGiants.cs" />
+    <Compile Include="Encryption_Decryption_of_Enigma_Machine\Encryption_Decryption_of_Enigma_Machine.cs" />
+    <Compile Include="foobar\bunny_prisoner_locating\bunny_prisoner_locating.cs" />
+    <Compile Include="foobar\FuelInjectionPerfection\Answer.cs" />
+    <Compile Include="foobar\prepare-the-bunnies-escape\Answer2.cs" />
+    <Compile Include="foobar\prepare-the-bunnies-escape\Answer1.cs" />
+    <Compile Include="foobar\prime\Answer1.cs" />
+    <Compile Include="foobar\the_grandest_staircase_of_them_all\the_grandest_staircase_of_them_all.cs" />
+    <Compile Include="GhostLegs\GhostLegs.cs" />
+    <Compile Include="GravityTumbler\GravityTumbler.cs" />
+    <Compile Include="Highest truncated pyramid\Highest_Truncated_Pyramid.cs" />
+    <Compile Include="Horse-racingDuals\Horse-racingDuals - Copy.cs" />
+    <Compile Include="Horse-racingDuals\Horse-racingDuals.cs" />
+    <Compile Include="Horse-racingDuals\Hourse_Sl2.cs" />
+    <Compile Include="Horse-racingDuals\Hourse_Sl1.cs" />
+    <Compile Include="Lumen\Lumen.cs" />
+    <Compile Include="Lumen\solution2.cs" />
+    <Compile Include="Lumen\solution3.cs" />
+    <Compile Include="Mystery sums\MysterySums.cs" />
+    <Compile Include="PiratesTreasure\PiratesTreasure.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="projectEuler\10-summationOfPrimes\summationOfPrimes.cs" />
+    <Compile Include="projectEuler\11-LargestProductInaGrid\LargestProductInaGrid.cs" />
+    <Compile Include="projectEuler\16-powerDigitSum\powerDigitSum.cs" />
+    <Compile Include="projectEuler\2-EvenFibonacciNumbers\EvenFibonacciNumbers.cs" />
+    <Compile Include="projectEuler\4-largestPalindromeProduct\largestPalindromeProduct.cs" />
+    <Compile Include="projectEuler\3-LargestPrimeFactor\LargestPrimeFactor.cs" />
+    <Compile Include="projectEuler\1-Multiplesof3and5\Multiplesof3and5.cs" />
+    <Compile Include="projectEuler\5-smallestMultiple\smallestMultiple.cs" />
+    <Compile Include="projectEuler\6-sumSquareDifference\sumSquareDifference.cs" />
+    <Compile Include="projectEuler\7-10001stPrime\_10001stPrime.cs" />
+    <Compile Include="projectEuler\8-LargestProductInaSeries\LargestProductInaSeries.cs" />
+    <Compile Include="projectEuler\9-specialPythagoreanTriplet\specialPythagoreanTriplet.cs" />
+    <Compile Include="projectEuler\selfPowers\selfPowers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecurringCharachter\RecurringCharachter.cs" />
+    <Compile Include="Shadows of the Knight - Episode 2\ShadowsOfTheKnightEpisode2.cs" />
+    <Compile Include="Shadows of the Knight - Episode 1\ShadowsOfTheKnightEpisode1.cs" />
+    <Compile Include="STOCK EXCHANGE LOSSES\STOCK-EXCHANGE-LOSSES.cs" />
+    <Compile Include="TEXT_FORMATTING\Text_formatting.cs" />
+    <Compile Include="The Last Crusade - Episode 1\sl2.cs" />
+    <Compile Include="The Last Crusade - Episode 1\sl1.cs" />
+    <Compile Include="The Last Crusade - Episode 1\TheLastCrusade-Episode1.cs" />
+    <Compile Include="TheDigitalRiverII\TheDigitalRiverII.cs" />
+    <Compile Include="TheDigitalRiverI\TheDigitalRiverI.cs" />
+    <Compile Include="tttttttttt.cs" />
+    <Compile Include="War\War.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Defibrillators\dist2.gif" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlowingFuse\Ddescription.txt" />
+    <Content Include="CGX Formatter\Goal.txt" />
+    <Content Include="Defibrillators\dist2.gif" />
+    <Content Include="Defibrillators\Goal.txt" />
+    <Content Include="DwarfsStandingOnTheShouldersOfGiants\Goal.txt" />
+    <Content Include="DwarfsStandingOnTheShouldersOfGiants\Screen Shot 2013-04-08 at 5.00.27 PM.png" />
+    <Content Include="DwarfsStandingOnTheShouldersOfGiants\Screen Shot 2013-04-08 at 5.11.39 PM.png" />
+    <Content Include="Encryption_Decryption_of_Enigma_Machine\Description.txt" />
+    <Content Include="foobar\bunny_prisoner_locating\desc.txt" />
+    <Content Include="foobar\FuelInjectionPerfection\desc.txt" />
+    <Content Include="foobar\prepare-the-bunnies-escape\desc.txt" />
+    <Content Include="foobar\prime\desc.txt" />
+    <Content Include="foobar\the_grandest_staircase_of_them_all\desc.txt" />
+    <Content Include="GhostLegs\Desc.txt" />
+    <Content Include="GravityTumbler\Desc.txt" />
+    <Content Include="Horse-racingDuals\TheGoal.txt" />
+    <Content Include="RecurringCharachter\Desc.txt" />
+    <Content Include="Shadows of the Knight - Episode 2\Desc.txt" />
+    <Content Include="Shadows of the Knight - Episode 1\Desc.txt" />
+    <Content Include="STOCK EXCHANGE LOSSES\Description.txt" />
+    <Content Include="STOCK EXCHANGE LOSSES\example1.PNG" />
+    <Content Include="STOCK EXCHANGE LOSSES\example2.PNG" />
+    <Content Include="TEXT_FORMATTING\Desc.txt" />
+    <Content Include="TheDigitalRiverII\Description.txt" />
+    <Content Include="TheDigitalRiverI\Description.txt" />
+    <Content Include="War\Description.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
