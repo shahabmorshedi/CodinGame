@@ -37,28 +37,28 @@ class BlowingFuse
 
         for (int i = 0; i < m; i++)
         {
-            int mx = int.Parse(inputs[i]) - 1;
-            if (devices[mx][1] == 0)
+            int mx = int.Parse(inputs[i]);
+            if (devices[mx - 1][1] == 0)
             {
-                devices[mx][1]++;
-                totalUse += devices[mx][0];
+                devices[mx - 1][1] = 1;
+                totalUse += devices[mx - 1][0];
                 if (totalUse > c)
                 {
                     Console.WriteLine("Fuse was blown.");
                     break;
                 }
-                Console.Error.WriteLine($"{totalUse} + {devices[mx][0]} = {totalUse}");
+                Console.Error.WriteLine($"{totalUse} + {devices[mx - 1][0]} = {totalUse}");
             }
-            else
+            else if (devices[mx - 1][1] == 1)
             {
-                devices[mx][1]--;
-                Console.Error.WriteLine($"{totalUse} + {0} = {totalUse}");
+                devices[mx][1] = 0;
+                totalUse -= devices[mx - 1][0];
+                Console.Error.WriteLine($"{totalUse} - ({devices[mx - 1][0]}) = {totalUse}");
             }
         }
 
         // Write an action using Console.WriteLine()
         // To debug: Console.Error.WriteLine("Debug messages...");
-        Console.Error.WriteLine($"{totalUse}");
 
         if (totalUse < c)
         {
