@@ -24,48 +24,51 @@ namespace CodinGame.Mystery_sums
 {
     public class Solution
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             string expression = Console.ReadLine();
+            string operands = "+-*/";
 
-            if (!expression.Contains("?"))
-                Console.WriteLine(expression);
-            else
+            string left = expression.Split('=')[0];
+            int right = int.Parse(expression.Split('=')[1]);
+            List<string> equation = new List<string>();
+
+            for (int i = 0; i < left.Length; i++)
             {
-                int result = int.Parse(expression.Split('=')[1].Trim());
-                string[] ex = expression.Split('=')[0].Split(' ');
-                List<string> x = new List<string>();
-                List<int> n = new List<int>();
-                List<string> o = new List<string>();
+                if (left[i] == ' ')
+                    continue;
 
-                for (int i = 0; i < ex.Length; i++)
+                string digit = "";
+                if (!operands.Contains(left[i]))
                 {
-                    int zint = 0;
-
-                    if (ex[i].Contains("?"))
-                    {
-                        x.Add(ex[i]);
-                    }
-                    else if (int.TryParse(ex[i], out zint))
-                    {
-                        n.Add(zint);
-                    }
-                    else if (ex[i] == "+" || ex[i] == "-" || ex[i] == "*" || ex[i] == "/")
-                    {
-                        o.Add(ex[i]);
-                    }
+                    digit += left[i];
                 }
-
-                foreach (string op in o)
+                else
                 {
-                    if (op == "+")
-                        if (result == (result - n[0]) + n[0])
-                            Console.WriteLine("{0} {1} {2} = {3}", (result - n[0]), o[0], n[0], result);
-
-
+                    equation.Add(digit);
+                    equation.Add(left[i].ToString());
                 }
-
             }
+
+            int result = 0;
+            while (result != right)
+            {
+                for (int i = 0; i < equation.Count; i++)
+                {
+                    if (!operands.Contains(left[i]))
+                    {
+                        if (equation[i].Contains('?'))
+                        {
+                        }
+                    }
+                }
+            }
+
+
+            // Write an answer using Console.WriteLine()
+            // To debug: Console.Error.WriteLine("Debug messages...");
+
+            Console.WriteLine("answer");
         }
     }
 }

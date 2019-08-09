@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodinGame</RootNamespace>
     <AssemblyName>CodinGame</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -27,6 +27,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CodinGame.DwarfsStandingOnTheShouldersOfGiants.DwarfsStandingOnTheShouldersOfGiants</StartupObject>
+    <StartupObject>CodinGame.HIDDENWORD.HIDDENWORD</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,10 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsoluteDifferenceOdDiangonalOfSquareMatrix\AbsoluteDifferenceOdDiangonalOfSquareMatrix.cs" />
+    <Compile Include="Asteroids\Asteroids.cs" />
     <Compile Include="BlowingFuse\BlowingFuse.cs" />
     <Compile Include="BRACKETS_EXTREME_EDITION\BRACKETS_EXTREME_EDITION.cs" />
     <Compile Include="CGX Formatter\CGXFormatter.cs" />
-    <Compile Include="Clash\Clash1.cs" />
+    <Compile Include="ChessBoardAnalyzer\ChessBoardAnalyzer.cs" />
+    <Compile Include="Clash\Clash.cs" />
     <Compile Include="CodealaMode\CodealaMode.cs" />
     <Compile Include="Defibrillators\Defibrillators - Copy.cs" />
     <Compile Include="Defibrillators\Defibrillators.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="foobar\the_grandest_staircase_of_them_all\the_grandest_staircase_of_them_all.cs" />
     <Compile Include="GhostLegs\GhostLegs.cs" />
     <Compile Include="GravityTumbler\GravityTumbler.cs" />
+    <Compile Include="HIDDENWORD\HIDDENWORD.cs" />
     <Compile Include="Highest truncated pyramid\Highest_Truncated_Pyramid.cs" />
     <Compile Include="Horse-racingDuals\Horse-racingDuals - Copy.cs" />
     <Compile Include="Horse-racingDuals\Horse-racingDuals.cs" />
@@ -104,16 +109,19 @@
     <Compile Include="projectEuler\selfPowers\selfPowers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecurringCharachter\RecurringCharachter.cs" />
+    <Compile Include="Scrabble\Scrabble.cs" />
     <Compile Include="Shadows of the Knight - Episode 2\ShadowsOfTheKnightEpisode2.cs" />
     <Compile Include="Shadows of the Knight - Episode 1\ShadowsOfTheKnightEpisode1.cs" />
     <Compile Include="STOCK EXCHANGE LOSSES\STOCK-EXCHANGE-LOSSES.cs" />
+    <Compile Include="Temperatures\Temperatures.cs" />
     <Compile Include="TEXT_FORMATTING\Text_formatting.cs" />
     <Compile Include="The Last Crusade - Episode 1\sl2.cs" />
     <Compile Include="The Last Crusade - Episode 1\sl1.cs" />
     <Compile Include="The Last Crusade - Episode 1\TheLastCrusade-Episode1.cs" />
     <Compile Include="TheDigitalRiverII\TheDigitalRiverII.cs" />
     <Compile Include="TheDigitalRiverI\TheDigitalRiverI.cs" />
-    <Compile Include="tttttttttt.cs" />
+    <Compile Include="Thor\Thor.cs" />
+    <Compile Include="Unleash the Geek\UnleashtheGeek-BotProgramming.cs" />
     <Compile Include="War\War.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +140,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AbsoluteDifferenceOdDiangonalOfSquareMatrix\EYX3bpTXYAM5rs_.jpg" />
     <Content Include="BlowingFuse\Ddescription.txt" />
     <Content Include="CGX Formatter\Goal.txt" />
     <Content Include="Defibrillators\dist2.gif" />
@@ -159,7 +168,9 @@
     <Content Include="TheDigitalRiverI\Description.txt" />
     <Content Include="War\Description.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PREFIXCODE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
